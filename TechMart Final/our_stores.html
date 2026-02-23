@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Branches - TechMart</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .brand-color {
+        color: #ff6b35;
+      }
+
+      .store-card {
+        transition: 0.3s;
+      }
+
+      .store-card:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-brand {
+        background-color: #ff6b35;
+        color: white;
+      }
+
+      .btn-brand:hover {
+        background-color: #e65c2f;
+        color: white;
+      }
+
+      .filter-btn.active {
+        background-color: #ff6b35 !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5 py-3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="Home.html">
+          <span class="text-dark">TECH</span>
+          <span class="brand-color">MART</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="py-5 text-center bg-light">
+      <div class="container">
+        <h1 class="fw-bold">Our Stores</h1>
+        <p class="text-muted">Find the nearest store</p>
+      </div>
+    </section>
+
+    <div class="container text-center mb-4">
+      <button
+        class="btn btn-outline-dark filter-btn active"
+        onclick="filterStores('all')"
+      >
+        All
+      </button>
+      <button
+        class="btn btn-outline-dark filter-btn"
+        onclick="filterStores('cairo')"
+      >
+        Cairo
+      </button>
+      <button
+        class="btn btn-outline-dark filter-btn"
+        onclick="filterStores('alex')"
+      >
+        Alexandria
+      </button>
+      <button
+        class="btn btn-outline-dark filter-btn"
+        onclick="filterStores('giza', this)"
+      >
+        Giza
+      </button>
+    </div>
+    <section class="pb-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4 store-item" data-city="cairo">
+            <div class="card store-card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">TechMart Nasr City</h5>
+                <p>
+                  <i class="bi bi-geo-alt-fill brand-color"></i> Abbas el-akked
+                  - Nasr City
+                </p>
+                <p><i class="bi bi-telephone-fill brand-color"></i> xxxxx</p>
+                <p>
+                  <i class="bi bi-clock-fill brand-color"></i> 10 AM – 11 PM
+                </p>
+                <a href="" class="btn btn-brand btn-sm">Location</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 store-item" data-city="cairo">
+            <div class="card store-card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">TechMart Maadi</h5>
+                <p>
+                  <i class="bi bi-geo-alt-fill brand-color"></i> Maadi, Cairo
+                </p>
+                <p><i class="bi bi-telephone-fill brand-color"></i> xxxxx</p>
+                <p>
+                  <i class="bi bi-clock-fill brand-color"></i> 10 AM – 11 PM
+                </p>
+                <a href="" class="btn btn-brand btn-sm">Location</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 store-item" data-city="alex">
+            <div class="card store-card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">TechMart Alexandria</h5>
+                <p><i class="bi bi-geo-alt-fill brand-color"></i> Alexandria</p>
+                <p><i class="bi bi-telephone-fill brand-color"></i> xxxxx</p>
+                <p>
+                  <i class="bi bi-clock-fill brand-color"></i> 10 AM – 11 PM
+                </p>
+                <a href="" class="btn btn-brand btn-sm">Location</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 store-item" data-city="giza">
+            <div class="card store-card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">TechMart Giza</h5>
+                <p>
+                  <i class="bi bi-geo-alt-fill brand-color"></i> El-Haram, Giza
+                </p>
+                <p><i class="bi bi-telephone-fill brand-color"></i> xxxxx</p>
+                <p>
+                  <i class="bi bi-clock-fill brand-color"></i> 10 AM – 11 PM
+                </p>
+                <a href="" class="btn btn-brand btn-sm">Location</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="About Us.html"
+                  class="text-white-50 text-decoration-none"
+                  >Who are we?</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <span class="text-white-50">Phone: 16420</span>
+              </li>
+              <li class="mb-2">
+                <span class="text-white-50">E-mail: info@2b.com.eg</span>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3">My Account</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >My personal account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Order History</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Track your order</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3">Most Searched</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Air conditioners</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Laptops</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Mobile phones</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Home appliances</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Televisions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="mb-3">Our Branches</h5>
+            <p class="text-white-50">
+              More than 50 branches are available to serve you.
+            </p>
+            <p class="text-white-50">
+              Branches are open daily / from 10:00 AM to 11:00 PM
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+        <div class="text-center">
+          <p class="text-white-50 mb-0">© 2026 TechMart, Inc</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function filterStores(city) {
+        let stores = document.getElementsByClassName("store-item");
+
+        for (let i = 0; i < stores.length; i++) {
+          let storeCity = stores[i].getAttribute("data-city");
+          if (city === "all") {
+            stores[i].style.display = "block";
+          } else if (storeCity === city) {
+            stores[i].style.display = "block";
+          } else {
+            stores[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechMart</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+      .logo {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .category-card {
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .category-card .card-title {
+        transition: color 0.3s;
+      }
+
+      .category-card:hover .card-title {
+        color: #ff6b35 !important;
+      }
+
+      .wishlist:hover {
+        background-color: #ff6b35;
+        color: white;
+        border-color: #ffffff;
+      }
+
+      .wishlist:hover::before {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5 py-4"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="Home.html">
+          <span class="text-dark">TECH</span
+          ><span style="color: #ff6b35">MART</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <form class="d-flex mx-auto" style="width: 50%; color: black">
+            <input
+              class="form-control py-2"
+              type="search"
+              placeholder="What are you looking for?"
+            />
+            <button
+              class="btn text-white ms-2"
+              style="background-color: #ff6b35"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+
+          <div class="d-flex align-items-center gap-4">
+            <a
+              href="signup.html"
+              class="text-decoration-none text-dark text-center"
+            >
+              <i class="bi bi-person fs-4 d-block"></i>
+              <small>Account</small>
+            </a>
+
+            <div class="text-decoration-none text-dark text-center">
+              <i class="bi bi-heart fs-4 d-block"></i>
+              <small>Wishlist</small>
+            </div>
+
+            <a
+              href="pages/cart.html"
+              class="text-decoration-none text-dark text-center position-relative"
+            >
+              <i class="bi bi-cart3 fs-4 d-block"></i>
+              <small>Cart</small>
+              <span
+                class="position-absolute top-0 start-100 badge rounded-pill bg-danger cart-badge"
+                style="font-size: 10px"
+                >0</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero bg-light py-5 mb-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6 px-3">
+            <div class="header py-4 pe-4">
+              <span class="display-5 fw-light"> Explore Thousands of </span>
+              <span class="display-6" style="color: #ff6b35; font-weight: bold"
+                >Electronics & Appliances</span
+              >
+              <span class="display-5 fw-light"> for Every Home </span>
+            </div>
+            <p class="fs-6 text-muted mb-4" style="font-weight: 200">
+              Quality products, unbeatable prices, and hassle-free shopping
+              experience. Shop from thousands of trusted brands with fast
+              delivery and easy returns.
+            </p>
+
+            <a
+              href="product_list.html"
+              class="btn btn-lg text-white px-2 py-2"
+              style="background-color: #ff6b35"
+            >
+              Shop All Products
+              <i class="bi bi-arrow-right ms-1" style="padding-left: 11px"></i>
+            </a>
+          </div>
+          <div class="col-md-6 text-center">
+            <div
+              class="image-circle"
+              style="
+                background-color: rgba(255, 107, 53, 0.08);
+                border-radius: 50%;
+                width: 100%;
+                max-width: 450px;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+              "
+            >
+              <img
+                src="Assets/appliances bg removed.png"
+                class="img-fluid"
+                alt="appliances"
+                style="max-width: 100%; max-height: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="container my-3">
+        <div class="h2 my-3">Categories</div>
+        <div class="row g-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/air-conditioners.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/ac NO background.png"
+                  class="card-img-top p-3"
+                  alt="ac"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Air Conditioners</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/washing.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/washing_machine_now_watermark-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="fridge"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Large Home Appliences</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/mixer no bg.png"
+                  class="card-img-top p-3"
+                  alt="tv"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Small Home Appliances</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/Personal care not bg.png"
+                  class="card-img-top p-3"
+                  alt="washing machine"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Personal Care</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/printer_no_watermark-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="tv"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">ELectronics</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/PS5-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="tv"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Gaming Area</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/smart watches not bg.png"
+                  class="card-img-top p-3"
+                  alt="tv"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Wearables</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="#" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/iphone_no_water_marl-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="tv"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">
+                    Iphones, Tablets, & Accesories
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/air-conditioners.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/laptop_no_water_mark-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="ac"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Laptops & Computers</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/air-conditioners.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/tv_no_watermark-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="ac"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">TVs</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/air-conditioners.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/speakrs-removebg-preview.png"
+                  class="card-img-top p-3"
+                  alt="ac"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Speakers</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="pages/air-conditioners.html" class="text-decoration-none">
+              <div
+                class="card text-center bg-light category-card"
+                style="
+                  border: 0px;
+                  border-radius: 15px;
+                  height: 200px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                "
+              >
+                <img
+                  src="Assets/ac NO background.png"
+                  class="card-img-top p-3"
+                  alt="ac"
+                  style="max-height: 140px; object-fit: contain"
+                />
+                <div class="card-body pt-0">
+                  <h6 class="card-title text-dark">Air Conditioners</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flash sale bg-light py-4 my-4 mb-4">
+      <div class="container my-3">
+        <div class="d-flex justify-content-between">
+          <div class="h2 fw-bold my-3">Flash Sale!</div>
+          <a href="" class="text-decoration-none">
+            <button
+              class="btn"
+              style="border: 0.5 solid; border-color: #ff6b35"
+            >
+              More >
+            </button>
+          </a>
+        </div>
+        <div id="flash-products" class="row g-4">
+          <div class="col-md-3">
+            <a href="" class="text-decoration-none text-dark">
+              <div
+                class="card"
+                style="
+                  border-radius: 15px;
+                  border-color: #ffffff;
+                  overflow: hidden;
+                  height: 420px;
+                "
+              >
+                <div
+                  style="
+                    height: 200px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ffffff;
+                  "
+                >
+                  <img
+                    src="Assets/iphone_no_water_marl-removebg-preview.png"
+                    class="img-fluid"
+                    alt="iphone"
+                    style="max-height: 100%; object-fit: contain"
+                  />
+                </div>
+
+                <div class="card-body py-2 px-3">
+                  <h5 class="card-title mb-1">
+                    Apple iPhone 17 Pro - 256GB - Cosmic Orang...
+                  </h5>
+                  <p class="card-text text-muted mb-2" style="font-size: 14px">
+                    512GB - Orange
+                  </p>
+
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <p class="fs-4 fw-normal" style="color: #000000">$1099</p>
+                    <p
+                      class="text-danger text-decoration-line-through"
+                      style="font-size: 14px"
+                    >
+                      $1199.99
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between button-card">
+                    <button
+                      class="btn w-50"
+                      style="background-color: #ff6b35; color: white"
+                    >
+                      Add to Cart
+                    </button>
+                    <button
+                      class="btn w-20 bi bi-heart wishlist"
+                      style="border-color: #ff6b35; color: #ff6b35"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="text-decoration-none text-dark">
+              <div
+                class="card"
+                style="
+                  border-radius: 15px;
+                  border-color: #ffffff;
+                  overflow: hidden;
+                  height: 420px;
+                "
+              >
+                <div
+                  style="
+                    height: 200px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ffffff;
+                  "
+                >
+                  <img
+                    src="Assets/ac NO background.png"
+                    class="img-fluid"
+                    alt="iphone"
+                    style="max-height: 100%; object-fit: contain"
+                  />
+                </div>
+
+                <div class="card-body py-2 px-3">
+                  <h5 class="card-title mb-1">
+                    Midea 2.25 HP AI Eco Master Inverter Air Conditione...
+                  </h5>
+                  <p class="card-text text-muted mb-2" style="font-size: 14px">
+                    White - TM550
+                  </p>
+
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <p class="fs-4 fw-normal" style="color: #000000">$1899</p>
+                    <p
+                      class="text-danger text-decoration-line-through"
+                      style="font-size: 14px"
+                    >
+                      $2199.99
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between button-card">
+                    <button
+                      class="btn w-50"
+                      style="background-color: #ff6b35; color: white"
+                    >
+                      Add to Cart
+                    </button>
+                    <button
+                      class="btn w-20 bi bi-heart wishlist"
+                      style="border-color: #ff6b35; color: #ff6b35"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="text-decoration-none text-dark">
+              <div
+                class="card"
+                style="
+                  border-radius: 15px;
+                  border-color: #ffffff;
+                  overflow: hidden;
+                  height: 420px;
+                "
+              >
+                <div
+                  style="
+                    height: 200px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ffffff;
+                  "
+                >
+                  <img
+                    src="Assets/jbl2.jpg"
+                    class="img-fluid"
+                    alt="iphone"
+                    style="max-height: 100%; object-fit: contain"
+                  />
+                </div>
+
+                <div class="card-body py-2 px-3">
+                  <h5 class="card-title mb-1">
+                    JBL Charge 6 Bluetooth Speaker - Blac...
+                  </h5>
+                  <p class="card-text text-muted mb-2" style="font-size: 14px">
+                    Wirless - SP900
+                  </p>
+
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <p class="fs-4 fw-normal" style="color: #000000">$499</p>
+                    <p
+                      class="text-danger text-decoration-line-through"
+                      style="font-size: 14px"
+                    >
+                      $699.99
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between button-card">
+                    <button
+                      class="btn w-50"
+                      style="background-color: #ff6b35; color: white"
+                    >
+                      Add to Cart
+                    </button>
+                    <button
+                      class="btn w-20 bi bi-heart wishlist"
+                      style="border-color: #ff6b35; color: #ff6b35"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="text-decoration-none text-dark">
+              <div
+                class="card"
+                style="
+                  border-radius: 15px;
+                  border-color: #ffffff;
+                  overflow: hidden;
+                  height: 420px;
+                "
+              >
+                <div
+                  style="
+                    height: 200px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ffffff;
+                  "
+                >
+                  <img
+                    src="Assets/PS5 AND GAME.jpg"
+                    class="img-fluid"
+                    alt="iphone"
+                    style="max-height: 100%; object-fit: contain"
+                  />
+                </div>
+
+                <div class="card-body py-2 px-3">
+                  <h5 class="card-title mb-1">
+                    Sony PlayStation 5 Slim Digital Edition with FC2...
+                  </h5>
+                  <p class="card-text text-muted mb-2" style="font-size: 14px">
+                    DualDense - GM572
+                  </p>
+
+                  <div class="d-flex align-items-center gap-1 mb-3">
+                    <p class="fs-4 fw-normal" style="color: #000000">$1099</p>
+                    <p
+                      class="text-danger text-decoration-line-through"
+                      style="font-size: 14px"
+                    >
+                      $1199.99
+                    </p>
+                  </div>
+                  <div class="d-flex justify-content-between button-card">
+                    <button
+                      class="btn w-50"
+                      style="background-color: #ff6b35; color: white"
+                    >
+                      Add to Cart
+                    </button>
+                    <button
+                      class="btn w-20 bi bi-heart wishlist"
+                      style="border-color: #ff6b35; color: #ff6b35"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card my-4">
+              <img
+                style="border-radius: 20px"
+                src="Assets/MYLO_EN.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newArrivals bg-dark py-4 my-4">
+      <div class="container my-3">
+        <div class="d-flex justify-content-between">
+          <div class="h2 fw-bold my-3 mb-5 text-white">New Arrivals!</div>
+          <a href="pages/Newarrivals.html" class="text-decoration-none">
+            <button
+              class="btn"
+              style="border: 0.5 solid; border-color: #ff6b35; color: #ff6b35"
+            >
+              View More >
+            </button>
+          </a>
+        </div>
+        <div id="new-arrivals-products" class="row g-4"></div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="About Us.html"
+                  class="text-white-50 text-decoration-none"
+                  >Who are we?</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <span class="text-white-50">Phone: 16420</span>
+              </li>
+              <li class="mb-2">
+                <span class="text-white-50">E-mail: info@2b.com.eg</span>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="mb-3">My Account</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >My personal account</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Order History</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Track your order</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="mb-3">Most Searched</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Air conditioners</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Laptops</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Mobile phones</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Home appliances</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50 text-decoration-none"
+                  >Televisions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="mb-3">Our Branches</h5>
+            <p class="text-white-50">
+              More than 50 branches are available to serve you.
+            </p>
+            <p class="text-white-50">
+              Branches are open daily / from 10:00 AM to 11:00 PM
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+        <div class="text-center">
+          <p class="text-white-50 mb-0">© 2026 TechMart, Inc</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/cart.js"></script>
+    <script src="Home.js"></script>
+  </body>
+</html>

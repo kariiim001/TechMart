@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+  <style>
+    .logo {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .category-card {
+      transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .category-card .card-title {
+      transition: color 0.3s;
+    }
+
+    .category-card:hover .card-title {
+      color: #ff6b35 !important;
+    }
+
+    .wishlist:hover {
+      background-color: #ff6b35;
+      color: white;
+      border-color: #ffffff;
+    }
+
+    .wishlist:hover::before {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5 py-4;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="../Home.html">
+        <span class="text-dark">TECH</span><span style="color: #ff6b35">MART</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <form class="d-flex mx-auto" style="width: 50%; color: black">
+          <input class="form-control py-2" type="search" placeholder="What are you looking for?" />
+          <button class="btn text-white ms-2" style="background-color: #ff6b35" type="submit">
+            Search
+          </button>
+        </form>
+
+        <div class="d-flex align-items-center gap-4">
+          <a href="../signup.html" class="text-decoration-none text-dark text-center">
+            <i class="bi bi-person fs-4 d-block"></i>
+            <small>Account</small>
+          </a>
+
+          <div class="text-decoration-none text-dark text-center">
+            <i class="bi bi-heart fs-4 d-block"></i>
+            <small>Wishlist</small>
+          </div>
+
+          <a href="cart.html" class="text-decoration-none text-dark text-center position-relative">
+            <i class="bi bi-cart3 fs-4 d-block"></i>
+            <small>Cart</small>
+            <span class="position-absolute top-0 start-100 badge rounded-pill bg-danger cart-badge"
+              style="font-size: 10px">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-12 justify-content-lg-start m-4 p-5">
+    <P>HOME > All Products > Iphone 17 PRO</P>
+  </div>
+
+  <section class="p-5 mt-5">
+    <div class="container fluid">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card pe-5 me-5" style="border: 0; background-color: #ffffff; border-radius: 15px">
+            <img src="/Assets\iphone_no_water_marl-removebg-preview.png" class="img-fluid" alt="iphone"
+              style="max-width: 100%; margin: 0 auto; object-fit: contain" />
+          </div>
+        </div>
+
+      
+        <div class="col-md-6">
+          
+          <h6 class="text-muted mb-2">Apple</h6>
+
+          
+          <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">★ 5.0</span>
+            <a href="#" class="text-decoration-none" style="color: #ff6b35">1 User Feedback</a>
+          </div>
+          <h4 class=" display-5 mb-4">
+            Apple iPhone 17 Pro - 256GB - Cosmic Orange
+            </h3>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <p class="mb-2 fw-"><span class="fw-bold">SPU:</span> IPH17PRO</p>
+                <p class="mb-2 fw-"><span class="fw-bold">Storage:</span> 200</p>
+                <p class="mb-2 fw-"><span class="fw-bold">Color:</span> Orange</p>
+              </div>
+              <div class="col-6">
+                <p class="mb-2 fw-bold">
+                  Availability:
+                  <span class="text-success">In Stock</span>
+                </p>
+                <p class="mb-2 fw-"><span class="fw-bold">Warranty:</span> 1 Year</p>
+              </div>
+            </div>
+
+  
+            <div class="alert alert-success mb-3" style="background-color: #d4edda; border: 0; border-radius: 10px">
+              <i class="bi bi-check-circle"></i> Save $200
+            </div>
+
+            <div class="mb-4">
+              <p class="text-muted text-decoration-line-through mb-1">$1,299</p>
+              <div class="d-flex align-items-center gap-3">
+                <h3 class="fw-bold mb-0">$1,099</h3>
+                <span class="badge px-3 py-2" style="
+                    background-color: #ffe5e5;
+                    color: #d9534f;
+                    font-size: 14px;
+                    border-radius: 10px;
+                  ">35% OFF</span>
+              </div>
+            </div>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="card p-3" style="
+                    background-color: #fff8f0;
+                    border: 0;
+                    border-radius: 10px;
+                  ">
+                  <h6 class="mb-1 fw-bold">ClicknPick - Free Pickup</h6>
+                  <p class="text-muted mb-1" style="font-size: 13px">
+                    Check In Store Availability
+                  </p>
+                  <a href="../our_stores.html" class="text-decoration-none fw-bold" style="color: #ff6b35">Show Stores</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card p-3" style="
+                    background-color: #f8f9fa;
+                    border: 0;
+                    border-radius: 10px;
+                  ">
+                  <h6 class="mb-1 fw-bold">Installment Plans</h6>
+                  <p class="text-muted mb-1" style="font-size: 13px">
+                    Check Our Partners Offers
+                  </p>
+                  <a href="#" class="text-decoration-none fw-bold" style="color: #ff6b35">Show Plans</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mb-3">
+              <div class="input-group" style="width: 150px">
+                <button class="btn btn-outline-secondary" type="button" style="border-radius: 10px 0 0 10px">
+                  -
+                </button>
+                <input type="text" class="form-control text-center" value="1" style="border-left: 0; border-right: 0" />
+                <button class="btn btn-outline-secondary" type="button" style="border-radius: 0 10px 10px 0">
+                  +
+                </button>
+              </div>
+              <button class="btn btn-lg flex-grow-1 text-white" style="background-color: #ff6b35; border-radius: 10px">
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+              <button class="btn btn-lg wishlist" style="
+                  border: 1px solid #ff6b35;
+                  color: #ff6b35;
+                  border-radius: 10px;
+                ">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <section class="py-5 m-4" style="background-color: #ffffff;">
+    <div class="container-fluid p-5">
+
+      <div class="">
+        <h2 class="fw-bold display-6 mb-5">Product <span class="text-muted fw-normal">Overview</span></h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-7">
+          <div
+            style="background-color: #f8f9fa; border-radius: 15px; padding: 60px; display: flex; align-items: center; justify-content: center; height: 100%;">
+            <img src="/Assets\orange iphone.jpg" class="img-fluid" alt="iphone"
+              style="max-width: 100%; height: 450px; object-fit: contain; border-radius: 20px;">
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+
+          <div class="mb-0 p-3" style="background-color: #fff5f0;">
+            <span class="text-muted">Select From Category :</span>
+            <span class="ms-2">Electronics</span>
+          </div>
+
+          <div class="mb-0 p-3" style="background-color: #ffffff;">
+            <span class="text-muted">Brand :</span>
+            <span class="ms-2">Apple</span>
+          </div>
+
+          <div class="mb-0 p-3" style="background-color: #fff5f0;">
+            <span class="text-muted">MPN :</span>
+            <span class="ms-2">IP17PRO256</span>
+          </div>
+
+          <div class="mb-0 p-3" style="background-color: #ffffff;">
+            <span class="text-muted">Device Type :</span>
+            <span class="ms-2">Smartphone</span>
+          </div>
+
+          <div class="mb-0 p-3" style="background-color: #fff5f0;">
+            <span class="text-muted">Color :</span>
+            <span class="ms-2">Cosmic Orange</span>
+          </div>
+
+          <div class="p-3" style="background-color: #ffffff;">
+            <div class="mb-2">
+              <span class="text-muted">More Features :</span>
+            </div>
+
+            <div class="mb-2">
+              <span class="fw-bold d-block">Product name</span>
+              <span class="text-muted">Apple iPhone 17 Pro - 256GB</span>
+            </div>
+
+            <div class="mb-2">
+              <span class="fw-bold d-block">Max. speed</span>
+              <span class="text-muted">25km/h</span>
+            </div>
+
+            <div class="mb-2">
+              <span class="fw-bold d-block">Travel range</span>
+              <span class="text-muted">25km</span>
+            </div>
+
+            <div class="mb-0">
+              <span class="fw-bold d-block">Product weight</span>
+              <span class="text-muted">221g</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 px-3" style="background-color: #f8f9fa;">
+    <div class="container-fluid px-5">
+
+      <div class="mb-4">
+        <h2 class="fw-bold">Technical <span class="text-muted fw-normal">Specifications</span></h2>
+      </div>
+
+      <div class="card" style="border: 0; border-radius: 15px; overflow: hidden;">
+        <table class="table table-borderless mb-0">
+          <tbody>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted" style="width: 30%;">Display</td>
+              <td class="p-3">6.7-inch Super Retina XDR display, 2796 x 1290 pixels, 120Hz ProMotion</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Processor</td>
+              <td class="p-3">A18 Pro chip with 6-core CPU, 6-core GPU, 16-core Neural Engine</td>
+            </tr>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted">Storage</td>
+              <td class="p-3">256GB Internal Storage (non-expandable)</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Camera</td>
+              <td class="p-3">Triple camera system: 48MP Main (ƒ/1.78), 12MP Ultra Wide (ƒ/2.2), 12MP Telephoto (ƒ/2.8)
+              </td>
+            </tr>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted">Front Camera</td>
+              <td class="p-3">12MP TrueDepth camera with ƒ/1.9 aperture</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Battery</td>
+              <td class="p-3">Built-in rechargeable lithium-ion battery, Up to 29 hours video playback</td>
+            </tr>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted">Connectivity</td>
+              <td class="p-3">5G, Wi-Fi 6E, Bluetooth 5.3, NFC, USB-C</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Operating System</td>
+              <td class="p-3">iOS 18</td>
+            </tr>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted">Dimensions</td>
+              <td class="p-3">159.9 x 76.7 x 8.25 mm</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Weight</td>
+              <td class="p-3">221 grams</td>
+            </tr>
+            <tr style="background-color: #fff5f0;">
+              <td class="p-3 text-muted">Water Resistance</td>
+              <td class="p-3">IP68 (maximum depth of 6 meters up to 30 minutes)</td>
+            </tr>
+            <tr style="background-color: #ffffff;">
+              <td class="p-3 text-muted">Colors Available</td>
+              <td class="p-3">Cosmic Orange, Titanium Black, Titanium White, Titanium Blue</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-5 px-3" style="background-color: #ffffff;">
+    <div class="container-fluid px-5">
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Related <span class="text-muted fw-normal">Products</span></h2>
+        <a href="pages/products.html" class="text-decoration-none">
+          <button class="btn" style="border: 1px solid #ff6b35; color: #ff6b35;">View All ></button>
+        </a>
+      </diV>
+      <div class="row g-4" id="related-products">
+        <div class="col-md-3">
+          <a href="pages/product.html?id=2" class="text-decoration-none text-dark">
+            <div class="card" style="border-radius: 15px; border: 0; overflow: hidden; height: 420px;">
+              <div
+                style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #ffffff;">
+                <img src="/Assets\samsung_s25_ultr-removebg-preview.png" class="img-fluid" alt="product"
+                  style="max-height: 100%; object-fit: contain;">
+              </div>
+
+              <div class="card-body py-2 px-3">
+                <h5 class="card-title mb-1">Samsung Galaxy S24 Ultra</h5>
+                <p class="card-text text-muted mb-2" style="font-size: 14px;">Smartphones</p>
+
+                <div class="d-flex align-items-center gap-1 mb-3">
+                  <p class="fs-4 fw-normal mb-0" style="color: #000000;">$999</p>
+                </div>
+                <div class="d-flex justify-content-between button-card">
+                  <button class="btn w-50" style="background-color: #ff6b35; color: white;">Add to Cart</button>
+                  <button class="btn w-20 wishlist" style="border-color: #ff6b35; color: #ff6b35;"><i
+                      class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="pages/product.html?id=3" class="text-decoration-none text-dark">
+            <div class="card" style="border-radius: 15px; border: 0; overflow: hidden; height: 420px;">
+              <div
+                style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #ffffff;">
+                <img src="/Assets/oppo-removebg-preview.png" class="img-fluid" alt="product"
+                  style="max-height: 100%; object-fit: contain;">
+              </div>
+
+              <div class="card-body py-2 px-3">
+                <h5 class="card-title mb-1">Oppo Reno 8 Lite</h5>
+                <p class="card-text text-muted mb-2" style="font-size: 14px;">Audio</p>
+
+                <div class="d-flex align-items-center gap-1 mb-3">
+                  <p class="fs-4 fw-normal mb-0" style="color: #000000;">$249</p>
+                </div>
+                <div class="d-flex justify-content-between button-card">
+                  <button class="btn w-50" style="background-color: #ff6b35; color: white;">Add to Cart</button>
+                  <button class="btn w-20 wishlist" style="border-color: #ff6b35; color: #ff6b35;"><i
+                      class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="pages/product.html?id=4" class="text-decoration-none text-dark">
+            <div class="card" style="border-radius: 15px; border: 0; overflow: hidden; height: 420px;">
+              <div
+                style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #ffffff;">
+                <img src="/Assets/smart watches not bg.png" class="img-fluid" alt="product"
+                  style="max-height: 100%; object-fit: contain;">
+              </div>
+
+              <div class="card-body py-2 px-3">
+                <h5 class="card-title mb-1">Apple Watch Series 10</h5>
+                <p class="card-text text-muted mb-2" style="font-size: 14px;">Wearables</p>
+
+                <div class="d-flex align-items-center gap-1 mb-3">
+                  <p class="fs-4 fw-normal mb-0" style="color: #000000;">$399</p>
+                </div>
+                <div class="d-flex justify-content-between button-card">
+                  <button class="btn w-50" style="background-color: #ff6b35; color: white;">Add to Cart</button>
+                  <button class="btn w-20 wishlist" style="border-color: #ff6b35; color: #ff6b35;"><i
+                      class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      
+        <div class="col-md-3">
+          <a href="pages/product.html?id=5" class="text-decoration-none text-dark">
+            <div class="card" style="border-radius: 15px; border: 0; overflow: hidden; height: 420px;">
+              <div
+                style="height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #ffffff;">
+                <img src="/Assets/samsung_s25_ultr-removebg-preview.png" class="img-fluid" alt="product"
+                  style="max-height: 100%; object-fit: contain;">
+              </div>
+
+              <div class="card-body py-2 px-3">
+                <h5 class="card-title mb-1">Samsung Galaxy S25 Ultra</h5>
+                <p class="card-text text-muted mb-2" style="font-size: 14px;">SmartPhones</p>
+
+                <div class="d-flex align-items-center gap-1 mb-3">
+                  <p class="fs-4 fw-normal mb-0" style="color: #000000;">$1299</p>
+                </div>
+                <div class="d-flex justify-content-between button-card">
+                  <button class="btn w-50" style="background-color: #ff6b35; color: white;">Add to Cart</button>
+                  <button class="btn w-20 wishlist" style="border-color: #ff6b35; color: #ff6b35;"><i
+                      class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="About Us.html" class="text-white-50 text-decoration-none">Who are we?</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Contact us</a></li>
+            <li class="mb-2"><span class="text-white-50">Phone: 16420</span></li>
+            <li class="mb-2"><span class="text-white-50">E-mail: info@2b.com.eg</span></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3">
+          <h5 class="mb-3">My Account</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">My personal account</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Order History</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Track your order</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Most Searched</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Air conditioners</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Laptops</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Mobile phones</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Home appliances</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Televisions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Our Branches</h5>
+          <p class="text-white-50">More than 50 branches are available to serve you.</p>
+          <p class="text-white-50">Branches are open daily / from 10:00 AM to 11:00 PM</p>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+      <div class="text-center">
+        <p class="text-white-50 mb-0">© 2026 TechMart, Inc</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../JS/cart.js"></script>
+</body>
+
+</html>
