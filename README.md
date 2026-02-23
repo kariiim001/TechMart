@@ -47,8 +47,8 @@ Project Final/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd "Tech Mart"
+   git clone https://github.com/kariiim001/TechMart.git
+   cd "TechMart"
    ```
 
 2. **Configure API Keys**
